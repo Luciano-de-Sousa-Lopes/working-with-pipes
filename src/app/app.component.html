@@ -57,7 +57,7 @@
         <input class="form-control" (input)="onMilesChange($event)" />
     </div>
     <div class="col">
-      <label class="form-label fw-bold">Kilometers</label><br />
+      <label class="form-label fw-bold">Km, m, cm, mm</label><br />
       <!-- <ng-container *ngIf="(miles | convertFromMiles: 'km') > 10"> -->
         {{ miles | convertFromMiles: 'mm' | number: '1.0-2'}}
       <!-- </ng-container> -->
@@ -71,7 +71,7 @@
         <input class="form-control" (input)="onCelsiusChange($event)" />
     </div>
     <div class="col">
-      <label class="form-label fw-bold">Fahrenheit</label><br />
+      <label class="form-label fw-bold">Fahrenheit/Kelvin</label><br />
       <!-- <ng-container *ngIf="(miles | convertFromMiles: 'km') > 10"> -->
         {{ celsius | celsiusToFahrenheit: 'K'}}
       <!-- </ng-container> -->
