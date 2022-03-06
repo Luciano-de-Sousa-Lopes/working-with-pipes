@@ -10,6 +10,14 @@ export class AppComponent {
   amount: number = 0;
   stringDate: string = '';
   height: number = 0;
+  miles: number = 0;
+  celsius: number = 0;
+
+  car = {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2000
+  };
 
   onNameChange(event: Event) {
     this.name = (event.target as HTMLInputElement).value;
@@ -25,5 +33,13 @@ export class AppComponent {
 
   onHeightChange(event: Event) {
     this.height = Number((event.target as HTMLInputElement).value);
+  }
+
+  onMilesChange(event: Event) {
+    this.miles = Number((event.target as HTMLInputElement).value);
+  }
+
+  onCelsiusChange(event: Event) {
+    this.celsius = Number((event.target as HTMLInputElement).value);
   }
 }
